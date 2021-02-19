@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Div, span, id and class</title>
+    <style>
+      .card {
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      .enhance {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ID vs CLASS - The only difference between them is that “id” is unique in a page and can 
+      only apply to at most one element or individual to a particular element, 
+      while “class” selector can apply to multiple elements to share or repeat -->
+    <div id="main-header">
+      <h1>My Website</h1>
+      <p>A site about me</p>
+    </div>
+
+    <ul id="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div id="about" class="card">
+      <h3>About</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+        consectetur
+
+        <span class="enhance"
+          >consequuntur dolorem vero distinctio nostrum adipisci</span
+        >
+        consequatur voluptatem exercitationem commodi!
+      </p>
+    </div>
+
+    <div id="contact" class="card">
+      <h3>Contact Me</h3>
+      <ul>
+        <li>Address: 7913 47th ave, Elmhurst NY</li>
+        <li>Phone: (555) 555-5555</li>
+        <li>Email: rlama@dev.com</li>
+      </ul>
+    </div>
+
+    <div id="footer">
+      <!-- '&copy;' entities - symbols/icons we can use in html -->
+      <p>Copyright &copy; 2021</p>
+    </div>
+  </body>
+</html>

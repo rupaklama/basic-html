@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms & Input</title>
+  </head>
+  <body>
+    <!-- action attrib - this where the form gets submitted to -->
+    <form action="">
+      <!-- div is 'division' to separate mark ups -->
+      <!-- TEXT INPUT -->
+      <div>
+        <!-- for attrib - needs to match 'id' of the input
+          so that when we click the 'label', the 'input' gets focused/highlighted
+          Not important but Optional -->
+        <label for="name">Name</label>
+        <!-- 'name' attrib is use in server side to grab an input value like for login -->
+        <!-- 'value' attrib to pre-fill value -->
+        <input type="text" id="name" name="name" value="Rupak Lama" />
+      </div>
+      <br />
+
+      <!-- EMAIL INPUT -->
+      <div>
+        <label for="email">Email</label>
+        <!-- placeholder attrib - to pre-fill value which will go away on click -->
+        <input type="email" name="email" id="email" placeholder="Enter Email" />
+      </div>
+      <br />
+
+      <!-- TEXTAREA INPUT -->
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+      </div>
+      <br />
+
+      <!-- SELECT -->
+      <!-- dropdown menu -->
+      <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <!-- selected - to pre-select one of the input -->
+          <option value="Female" selected>Female</option>
+        </select>
+      </div>
+      <br />
+
+      <!-- NUMBER -->
+      <!-- spin button for numbers -->
+      <div>
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" />
+      </div>
+      <br />
+
+      <!-- DATE -->
+      <div>
+        <label for="birthdate">Birth Date</label><br />
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+
+      <br />
+
+      <!-- RADIO button -->
+      <div>
+        <label for="membership">Membership</label>
+        <!-- Note: 'value' attrib is going to be different for each one -->
+        <input type="radio" name="membership" id="membership" value="simple" />
+        Simple
+
+        <!-- checked - to pre-select one of the input -->
+        <!-- value attrib - data will be sent to the server -->
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="standard"
+          checked
+        />
+        Standard
+        <input type="radio" name="membership" id="membership" value="super" />
+        Super
+      </div>
+      <br />
+
+      <!-- CHECKBOX - similar to radio button except we can choose multiple options -->
+      <div>
+        <label for="membership">I like...</label>
+        <!-- Note: 'value' attrib is going to be different for each one -->
+        <input type="checkbox" name="likes" id="likes" value="Bike" />
+        Bike
+
+        <input type="checkbox" name="likes" id="likes" value="car" />
+        car
+        <input type="checkbox" name="likes" id="likes" value="boat" />
+        Boat
+      </div>
+      <br />
+
+      <!-- INPUT SUBMIT -->
+      <!-- value attrib - text to display in a button -->
+      <input type="submit" value="Submit" />
+
+      <!-- BUTTON SUBMIT -->
+      <!-- same like above with button tag -->
+      <button type="submit">Submit</button>
+
+      <br /><br />
+      <!-- BUTTON RESET -->
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
