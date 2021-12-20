@@ -9,8 +9,6 @@
   <body>
     <!-- action attrib - this where the form gets submitted to -->
     <form action="">
-      <!-- div is 'division' to separate mark ups -->
-      <!-- TEXT INPUT -->
       <div>
         <!-- for attrib - needs to match 'id' of the input
           so that when we click the 'label', the 'input' gets focused/highlighted
@@ -18,7 +16,7 @@
         <label for="name">Name</label>
         <!-- 'name' attrib is use in server side to grab an input value like for login -->
         <!-- 'value' attrib to pre-fill value -->
-        <input type="text" id="name" name="name" value="Rupak Lama" />
+        <input type="text" id="name" name="name" value="" placeholder="Rupak Lama" />
       </div>
       <br />
 
@@ -33,18 +31,26 @@
       <!-- TEXTAREA INPUT -->
       <div>
         <label for="message">Message</label>
-        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        <textarea
+          name="message"
+          id="message"
+          value=""
+          placeholder="write here..."
+          cols="50"
+          rows="10"
+        ></textarea>
       </div>
       <br />
 
-      <!-- SELECT -->
+      <!-- SELECT LIST-->
       <!-- dropdown menu -->
       <div>
         <label for="gender">Gender</label>
-        <select name="gender" id="gender">
+        <select name="gender" id="gender" value="">
           <option value="male">Male</option>
-          <!-- selected - to pre-select one of the input -->
+          <!-- selected - to pre-select one of the input list-->
           <option value="Female" selected>Female</option>
+          <option value="other">Other</option>
         </select>
       </div>
       <br />
@@ -53,14 +59,14 @@
       <!-- spin button for numbers -->
       <div>
         <label for="age">Age</label><br />
-        <input type="number" name="age" id="age" />
+        <input type="number" name="age" id="age" value="" />
       </div>
       <br />
 
       <!-- DATE -->
       <div>
         <label for="birthdate">Birth Date</label><br />
-        <input type="date" name="birthdate" id="birthdate" />
+        <input type="date" name="birthdate" id="birthdate" value="" />
       </div>
 
       <br />
@@ -69,34 +75,28 @@
       <div>
         <label for="membership">Membership</label>
         <!-- Note: 'value' attrib is going to be different for each one -->
-        <input type="radio" name="membership" id="membership" value="simple" />
+        <input type="radio" name="membership" id="membership" value="" />
         Simple
 
         <!-- checked - to pre-select one of the input -->
         <!-- value attrib - data will be sent to the server -->
-        <input
-          type="radio"
-          name="membership"
-          id="membership"
-          value="standard"
-          checked
-        />
+        <input type="radio" name="membership" id="membership" value="" checked />
         Standard
-        <input type="radio" name="membership" id="membership" value="super" />
+        <input type="radio" name="membership" id="membership" value="" />
         Super
       </div>
       <br />
 
       <!-- CHECKBOX - similar to radio button except we can choose multiple options -->
       <div>
-        <label for="membership">I like...</label>
+        <label for="likes">I like...</label>
         <!-- Note: 'value' attrib is going to be different for each one -->
-        <input type="checkbox" name="likes" id="likes" value="Bike" />
+        <input type="checkbox" name="likes" id="likes" value="" />
         Bike
 
-        <input type="checkbox" name="likes" id="likes" value="car" />
+        <input type="checkbox" name="likes" id="likes" value="" />
         car
-        <input type="checkbox" name="likes" id="likes" value="boat" />
+        <input type="checkbox" name="likes" id="likes" value="" checked />
         Boat
       </div>
       <br />
